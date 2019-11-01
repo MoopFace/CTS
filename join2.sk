@@ -3,10 +3,10 @@ on first join:
 
 
 
-on kill: 
+on damage: 
   if victim is player:
-    add 0.5 to {bal::%player%}
-    send "Earned 5 credits for killing %victim%"
+    add 0.5 to {bal::%attacker%}
+    message attacker "Earned 5 credits for killing %victim%"
 
 on command "/shop":
    make console execute command "warp shop %player%"

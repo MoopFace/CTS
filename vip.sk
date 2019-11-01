@@ -1,0 +1,8 @@
+command /vip:
+ trigger:
+  send "&7With &aVIP&7:"
+  wait 1 second
+  send "&7You get a special Suffix,"
+  send "&7Kills are doubled"
+  send "&7Access to blocks that can only be gotten with commands"
+  send "&7Access to most Kits"

@@ -1,0 +1,29 @@
+command /spawn:
+  trigger:
+    if player is in region "pvp":
+      make console execute command "warp pvp %player%"
+      send "&7You are in PvP Zone. Do /hub to return to the hub."
+    else if player is in region "parkour":
+      make console execute command "warp park %player%"
+      send "&7You are in Parkour zone. Do /hub to return to the hub."
+    else if player is in region "arena":
+      make console execute command "warp arena %player%"
+      send "&7You are in Arena zone. Do /hub to return to the hub."
+    else:
+      make console execute command "warp spawn %player%"
+
+command /hub:
+  trigger:
+    make console execute command "warp spawn %player%"
+
+command /pvp:
+  trigger:
+    make console execute command "warp pvp %player%"
+
+command /parkour:
+  trigger:
+    make console execute command "warp park %player%"
+
+command /build:
+  trigger:
+    make console execute command "warp build %player%"

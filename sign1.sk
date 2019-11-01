@@ -1,0 +1,14 @@
+on click:
+  if clicked block is sign:
+    if second line of clicked block is "Survival":
+      make console execute command "warp survival %player%" 
+    if second line of clicked block is "PvP":
+      make console execute command "warp pvp %player%"
+    if second line of clicked block is "Parkour":
+      make console execute command "warp park %player%"
+    if second line of clicked block is "Zombie Arena":
+      make console execute command "warp zombie %player%"
+    if second line of clicked block is "Creative":
+      make console execute command "warp build %player%" 
+    if second line of clicked block is "Shop":
+      make console execute command "warp shop %player%"

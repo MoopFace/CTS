@@ -1,0 +1,6 @@
+command /forum:
+   trigger:
+      wait 1 second
+      message "&7[&2&lForum Link&7] &l|| &bhttps://forms.gle/h8dEX1ZtZZ3cJ43p7"
+      wait 1 second
+      message "&7Use this link to submit any comments"

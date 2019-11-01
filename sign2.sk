@@ -1,0 +1,22 @@
+on click:
+  if clicked block is sign:
+    if second line of clicked block is "Tyler's Wings":
+      set {_item} to elytra named "&bTyler's Wings"
+      enchant {_item} with thorns 3
+      enchant {_item} with unbreaking 3
+      give %player% 1 of {_item}
+      remove 100 from {bal:%player%}
+      send "Paid 100 for &b&l&oTyler's Wings!"
+    if second line of clicked block is "Mrs. Shedd Bottle":
+      set {_item} to firework_rocket named "&oMrs. Shedd's Baby Bottle"
+      give %player% 1 of {_item}
+      remove 100 from {bal:%player%}
+      send "&7Paid $100 for &f&oMrs. Shedd's Baby Bottle!"
+    if second line of clicked block is "Sage Buns":
+      set {_item} to bread named "&7&oSage Buns"
+      if {bal:%player%} is less then 50:
+        send "&cSorry, You don't have enough credits!"
+      else:
+        give %player% 1 of {_item}
+        remove 50 from {bal:%player%}
+        send "Paid $50 for &f Sage Buns"

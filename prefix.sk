@@ -1,0 +1,29 @@
+on chat:
+    set {_prefix} to {player::prefix::%player's uuid%}
+    if {_prefix} is not set:
+        set {_prefix} to "&7Player"
+    set the chat format to "&7%{_prefix}% &7%player%&8: &f%message%"
+command /setprefix [<text>] [<text>]:
+    permission: prefix.set
+    permission message: &cYou don't have permissions to execute this command!
+    usage: /setprefix
+    trigger:
+        set {_use} to "&cUse: &7/setprefix <player> <prefix|delete>"
+        if arg-1 is not set:
+            message {_use}
+        else:
+            set {_arg1} to arg-1 parsed as offline player
+            if {_arg1} is not set:
+                message "&cPlayer not found."
+            else:
+                set {_arg1uuid} to {_arg1}'s uuid
+                if arg-2 is not set:
+                    message {_use}
+                else:
+                    if arg-2 is "delete" or "remove" or "none":
+                        delete {player::prefix::%{_arg1uuid}%}
+                        message "&aSuccesfully removed the prefix of %{_arg1}%"
+                    else:
+                        set {_arg2} to colored arg-2
+                        set {player::prefix::%{_arg1uuid}%} to {_arg2}
+                        message "&aChanged the prefix of %{_arg1}% to ""&7%{_arg2}%&a""!"

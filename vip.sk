@@ -10,4 +10,4 @@ command /vip:
 
 
 on join:
-   give permission "server.all" to player
+   add server.all to player's permissions

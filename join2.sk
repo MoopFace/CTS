@@ -1,13 +1,13 @@
 on first join:
-  set {bal:%player%} to 0
+  set {bal::%player%} to 0
 
 
 
-on kill: 
+on damage: 
   if victim is player:
-    add 0.5 to {bal:%player%}
-    send "Earned 5 credits for killing %victim%"
+    add 0.5 to {bal::%attacker%}
+    message attacker "Earned 5 credits for killing %victim%"
 
-on command /shop:
+on command "/shop":
    make console execute command "warp shop %player%"
    send "&7Sending you to &aShop"

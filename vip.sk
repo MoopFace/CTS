@@ -1,4 +1,5 @@
 command /vip:
+ permission: "server.all"
  trigger:
   send "&7With &aVIP&7:"
   wait 1 second
@@ -6,3 +7,7 @@ command /vip:
   send "&7Kills are doubled"
   send "&7Access to blocks that can only be gotten with commands"
   send "&7Access to most Kits"
+
+
+on join:
+   give permission "server.all" to player

@@ -3,27 +3,27 @@ on click:
     if second line of clicked block is "Reg White Shirt":
       set {_item} to leather_armor named "&f&lReg White Shirt"
       dye {_item} White
-      if {bal::%player%} is less then 75:
+      if {bal.%player%} is less then 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}
-        remove 75 from {bal::%player%}
+        remove 75 from {bal.%player%}
         send "Paid 75 for &f&lWhite Reg Shirt!"
     if second line of clicked block is "Reg Gray Shirt":
       set {_item} to leather_armor named "&f&lReg White Shirt"
       dye {_item} Gray
-      if {bal::%player%} is less then 75:
+      if {bal.%player%} is less then 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}
-        remove 75 from {bal::%player%}
+        remove 75 from {bal.%player%}
         send "Paid 75 for &7&lGray Reg Shirt!"
     if second line of clicked block is "Prin Blue Shirt":
       set {_item} to leather_armor named "&1&lReg Blue Shirt"
       dye {_item} blue
-      if {bal::%player%} is less then 75:
+      if {bal.%player%} is less then 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}
-        remove 75 from {bal::%player%}
+        remove 75 from {bal.%player%}
         send "Paid 75 for &f&lBlue Reg Shirt!"

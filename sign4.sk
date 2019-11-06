@@ -2,31 +2,31 @@ on click:
   if clicked block is sign:
     if second line of clicked block is "Cherry ICE":
       set {_item} to potionofhealinglevelii named "&cCherry ICE"
-      if {bal::%player%} is less then 75:
+      if {bal.%player%} is less then 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}
-        remove 75 from {bal::%player%}
+        remove 75 from {bal.%player%}
         send "Paid 75 for &cCherry ICE!"   
     if second line of clicked block is "Lemon Lime ICE":
       set {_item} to potionofleapingextended named "&aLemon Lime ICE"
-      if {bal::%player%} is less then 75:
+      if {bal.%player%} is less then 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}
-        remove 75 from {bal::%player%}
+        remove 75 from {bal.%player%}
         send "Paid 75 for &cLemon Lime ICE!"  
     if second line of clicked block is "Black Rasb. ICE":
       set {_item} to potionofnightvextended named "&1Black Rasberry ICE"
-      if {bal::%player%} is less then 75:
+      if {bal.%player%} is less then 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}
-        remove 75 from {bal::%player%}
+        remove 75 from {bal.%player%}
         send "Paid 75 for &1Black Rasberry ICE!"
     if second line of clicked block is "Orange/Mang ICE":
       set {_item} to potofspeedextended named "&6Orange Mango ICE"
-      if {bal::%player%} is less then 75:
+      if {bal.%player%} is less then 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}

@@ -27,3 +27,7 @@ command /parkour:
 command /build:
   trigger:
     make console execute command "warp build %player%"
+
+command /plots:
+  trigger:
+    make console execute command "warp creativeplots %player%"

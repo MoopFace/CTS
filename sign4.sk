@@ -30,5 +30,5 @@ on click:
         send "&cSorry, You don't have enough credits!"
       else:
         give %player% 1 of {_item}
-        remove 75 from {bal::%player%}
+        remove 75 from {bal.%player%}
         send "Paid 75 for &6Orange Mango ICE!"

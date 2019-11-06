@@ -2,7 +2,7 @@ on chat:
     set {_prefix} to {player::prefix::%player's uuid%}
     if {_prefix} is not set:
         set {_prefix} to "&7Player"
-    set the chat format to "&7%{_prefix}% &7%player%&8: &f%message%"
+    set the chat format to "&7%{_prefix}% %player's display name%&8: &f%message%"
 command /setprefix [<text>] [<text>]:
     permission: prefix.set
     permission message: &cYou don't have permissions to execute this command!

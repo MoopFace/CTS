@@ -1,2 +1,7 @@
 on first join:
    make console execute command "tp %player% -211 90 35"
+   
+#Scoreboard setter
+on first join:
+   make console execute command "scoreboard players set %player% Pkills 0"
+   make console execute command "scoreboard players set %player% Allkill 0"

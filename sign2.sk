@@ -5,7 +5,7 @@ on click:
       enchant {_item} with thorns 3
       enchant {_item} with unbreaking 3
       if {bal.%player%} is less then 100:
-        send "&cSorry, You don't have enough credits!"
+        send "You don't have enough credits!"
       else:
         give player 1 of {_item}
         remove 100 from {bal.%player%}

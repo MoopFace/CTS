@@ -12,3 +12,21 @@ on click:
       make console execute command "warp build %player%" 
     else if second line of clicked block is "Shop":
       make console execute command "warp shop %player%"
+    else if second line of clicked block is "Hubbell":
+      make console execute command "sudo %player% hub"
+      make console execute command "sudo %player% team join Hubbell"
+      send "You are now affiliated with &bHubble House!"
+    else if second line of clicked block is "Flint":
+      make console execute command "sudo %player% hub"
+      make console execute command "sudo %player% team join flint"
+      send "You are now affiliated with &aFlint House!"
+    else if second line of clicked block is "Perrin":
+      make console execute command "sudo %player% hub"
+      make console execute command "sudo %player% team join perrin"
+      send "You are now affiliated with &cPerrin House!"
+    else if second line of clicked block is "Bole":
+      make console execute command "sudo %player% hub"
+      make console execute command "sudo %player% team join Bole"
+      send "You are now affiliated with &dBole House!"
+      
+    

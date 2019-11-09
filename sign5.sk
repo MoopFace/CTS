@@ -2,36 +2,36 @@ on click:
    if clicked block is sign:
       if second line of clicked block is "Prin Shield":
          send "&cSheild is currently Unavaiable... Sorry."
-      if second line of clicked block is "PAUL":
+      else if second line of clicked block is "PAUL":
          set {_item} to golden_hoe named &b&lPAUL"
          enchant {_item} with sharpness 9001
          enchant {_item} with fireaspect 69
-         if {bal::%player%} is less then 600:
+         if {bal.%player%} is less then 600:
             send "&cSorry, You don't have enough credits!"
          else:
             give %player% 1 of {_item}
-            remove 600 from {bal::%player%}
+            remove 600 from {bal.%player%}
             send "Paid 600 for &b&lPAUL!"
-      if second line of clicked block is "SPOOK STICK":
+      else if second line of clicked block is "SPOOK STICK":
          set {_item} to blaze_rod named "&lSPOOK STICK"
          enchant {_item} with sharpness 5
          enchant {_item} with knockback 2
          enchant {_item} with fireaspect 2
          enchant {_item} with looting 3
-         if {bal::%player%} is less then 300:
+         if {bal.%player%} is less then 300:
             send "&cSorry, You don't have enough credits!"
          else:
             give %player% 1 of {_item}
-            remove 300 from {bal::%player%}
+            remove 300 from {bal.%player%}
             send "Paid 300 for &lSPOOK STICK!"
-      if second line of clicked block is "Santa's Whip":
+      else if second line of clicked block is "Santa's Whip":
          set {_item} to fishing_rod named "Santa's Whip"
          enchant {_item} with unbreaking 3
          enchant {_item} with lure 3
          enchant {_item} with luck 3 
-         if {bal::%player%} is less then 300:
-           send "&cSorry, You don't have enough credits!"
+         if {bal.%player%} is less then 300:
+            send "&cSorry, You don't have enough credits!"
          else:
-           give %player% 1 of {_item}
-           remove 300 from {bal::%player%}
-           send "Paid 300 for &lSanta's Whip!"
+            give %player% 1 of {_item}
+            remove 300 from {bal.%player%}
+            send "Paid 300 for &lSanta's Whip!"

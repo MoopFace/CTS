@@ -3,7 +3,7 @@ on click:
       if second line of clicked block is "Prin Shield":
          send "&cSheild is currently Unavaiable... Sorry."
       else if second line of clicked block is "PAUL":
-         set {_item} to golden_hoe named &b&lPAUL"
+         set {_item} to goldenhoe named &b&lPAUL"
          enchant {_item} with sharpness 9001
          enchant {_item} with fireaspect 69
          if {bal.%player%} is less then 600:
@@ -13,7 +13,7 @@ on click:
             remove 600 from {bal.%player%}
             send "Paid 600 for &b&lPAUL!"
       else if second line of clicked block is "SPOOK STICK":
-         set {_item} to blaze_rod named "&lSPOOK STICK"
+         set {_item} to blazerod named "&lSPOOK STICK"
          enchant {_item} with sharpness 5
          enchant {_item} with knockback 2
          enchant {_item} with fireaspect 2
@@ -25,7 +25,7 @@ on click:
             remove 300 from {bal.%player%}
             send "Paid 300 for &lSPOOK STICK!"
       else if second line of clicked block is "Santa's Whip":
-         set {_item} to fishing_rod named "Santa's Whip"
+         set {_item} to fishingrod named "Santa's Whip"
          enchant {_item} with unbreaking 3
          enchant {_item} with lure 3
          enchant {_item} with luck 3 

@@ -31,3 +31,7 @@ command /build:
 command /plots:
   trigger:
     make console execute command "warp creativeplots %player%"
+
+command /ctf:
+  trigger:
+     make console execute command "warp ctf %player%"

@@ -4,25 +4,25 @@ on click:
       set {_item} to elytra named "&bTyler's Wings"
       enchant {_item} with thorns 3
       enchant {_item} with unbreaking 3
-      if {bal.%player%} is less then 100:
+      if balance of player is lower than or equal to 100:
         send "You don't have enough credits!"
       else:
         give player 1 of {_item}
-        remove 100 from {bal.%player%}
+        remove 100 from balance of player
         send "Paid 100 for &b&l&oTyler's Wings!"
     else if second line of clicked block is "Mrs. Shedd Bottle":
       set {_item} to firework_rocket named "&oMrs. Shedd's Baby Bottle"
-      if {bal.%player%} is less then 100:
+      if balance of player is lower than or equal to 100:
         send "&cSorry, You don't have enough credits!"
       else:
         give player 1 of {_item}
-        remove 100 from {bal.%player%}
+        remove 100 from balance of player
         send "&7Paid $100 for &f&oMrs. Shedd's Baby Bottle!"
     else if second line of clicked block is "Sage Buns":
       set {_item} to bread named "&7&oSage Buns"
-      if {bal.%player%} is less then 50:
+      if balance of player is lower than or equal to 50:
         send "&cSorry, You don't have enough credits!"
       else:
         give player 1 of {_item}
-        remove 50 from {bal.%player%}
+        remove 50 from balance of player
         send "Paid $50 for &f Sage Buns"

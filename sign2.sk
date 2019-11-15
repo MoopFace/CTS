@@ -5,13 +5,13 @@ on click:
       enchant {_item} with thorns 3
       enchant {_item} with unbreaking 3
       if balance of player <= 100:
-        send "You don't have enough credits!"
+        send "&cYou don't have enough credits!"
       else:
         give player 1 of {_item}
         remove 100 from balance of player
         send "Paid 100 for &b&l&oTyler's Wings!"
     else if second line of clicked block is "Mrs. Shedd Bottle":
-      set {_item} to firework_rocket named "&oMrs. Shedd's Baby Bottle"
+      set {_item} to fireworkrocket named "&oMrs. Shedd's Baby Bottle"
       if balance of player <= 100:
         send "&cSorry, You don't have enough credits!"
       else:

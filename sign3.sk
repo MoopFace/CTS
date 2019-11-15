@@ -1,8 +1,8 @@
 on click:
   if clicked block is sign:
     if second line of clicked block is "Reg White Shirt":
-      set {_item} to leather armor named "&f&lReg White Shirt"
-      dye {_item} White
+      set {_item} to leather chestplate named "&f&lReg White Shirt"
+      dye {_item} white
       if balance of player < 75:
         send "&cSorry, You don't have enough credits!"
       else:
@@ -10,8 +10,8 @@ on click:
         remove 75 from balance of player
         send "Paid 75 for &f&lWhite Reg Shirt!"
     else if second line of clicked block is "Reg Gray Shirt":
-      set {_item} to leather armor named "&f&lReg White Shirt"
-      dye {_item} Gray
+      set {_item} to leather chestplate named "&7&lReg Gray Shirt"
+      dye {_item} gray
       if balance of player < 75:
         send "&cSorry, You don't have enough credits!"
       else:
@@ -19,11 +19,11 @@ on click:
         remove 75 from balance of player
         send "Paid 75 for &7&lGray Reg Shirt!"
     else if second line of clicked block is "Prin Blue Shirt":
-      set {_item} to leather armor named "&1&lReg Blue Shirt"
+      set {_item} to leather chestplate named "&1&lReg Blue Shirt"
       dye {_item} blue
       if balance of player < 75:
         send "&cSorry, You don't have enough credits!"
       else:
         give player 1 of {_item}
         remove 75 from balance of player
-        send "Paid 75 for &f&lBlue Reg Shirt!"
+        send "Paid 75 for &1&lBlue Reg Shirt!"

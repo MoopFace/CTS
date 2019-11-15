@@ -14,7 +14,7 @@ on click:
       make console execute command "warp shop %player%"
     else if second line of clicked block is "Hubbell":
       make console execute command "sudo %player% hub"
-      make console execute command "sudo %player% team join Hubbell"
+      make console execute command "sudo %player% team join Hubble"
       send "You are now affiliated with &bHubble House!"
     else if second line of clicked block is "Flint":
       make console execute command "sudo %player% hub"

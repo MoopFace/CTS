@@ -27,7 +27,7 @@ on click:
         give player 1 of {_item}
         remove 75 from balance of player
         send "Paid 75 for &1&lBlue Reg Shirt!"
-    else if second line of clicked block is "Prin Blue Pants ":
+    else if second line of clicked block is "Prin Blue Pants":
       set {_item} to leather leggings named "&1&lReg Blue Pants"
       dye {_item} blue
       if balance of player < 75:
@@ -37,7 +37,7 @@ on click:
         remove 75 from balance of player
         send "Paid 75 for &1&lBlue Reg Pants!"
     else if second line of clicked block is "Prin Khaki Pants":
-      set {_item} to leather chestplate named "&6&lReg Khacki Pants"
+      set {_item} to leather leggings named "&6&lReg Khacki Pants"
       dye {_item} gold
       if balance of player < 75:
         send "&cSorry, You don't have enough credits!"

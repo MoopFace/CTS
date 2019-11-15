@@ -34,4 +34,4 @@ command /plots:
 
 command /ctf:
   trigger:
-     make console execute command "warp ctf %player%"
+    make console execute command "warp ctf %player%"

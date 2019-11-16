@@ -1,15 +1,7 @@
-on join:
-  if {bal.%player%} is not set:
-    set {bal.%player%} to 0
-  
-  
-
-
-
 on damage: 
   if victim is player:
-    add 0.5 to {bal.%attacker%}
-    message attacker "Earned 5 credits for killing %victim%"
+    add 0.5 balance of damager
+    send "You've killed %victim% and recieved 0.5 credits!" to damager
 
 on command "/shop":
    make console execute command "warp shop %player%"

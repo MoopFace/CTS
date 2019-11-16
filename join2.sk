@@ -1,6 +1,6 @@
 on damage: 
   if victim is player:
-    add 0.5 balance of damager
+    add 0.5 to balance of damager
     send "You've killed %victim% and recieved 0.5 credits!" to damager
 
 on command "/shop":

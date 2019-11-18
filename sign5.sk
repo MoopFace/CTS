@@ -3,7 +3,7 @@ on click:
       if second line of clicked block is "Prin Sheild":
          send "&cSheild is currently Unavaiable... Sorry."
       else if second line of clicked block is "PAUL":
-         set {_item} to goldenhoe named &b&lPAUL"
+         set {_item} to goldenhoe named "&b&lPAUL"
          enchant {_item} with sharpness 9001
          enchant {_item} with fireaspect 69
          if balance of player < 600:

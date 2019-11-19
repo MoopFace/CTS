@@ -32,7 +32,7 @@ on click:
         give %player% 1 of {_item}
         remove 75 from balance of player
         send "Paid 75 for &6Orange Mango ICE!"
-    if second line of clicked block is "Peach/Nect ICE"
+    if second line of clicked block is "Peach/Nect ICE":
       set {_item} to fireresistextendedpotion named "&6Peach/Nect ICE"
       if balance of player < 75:
         send "&cSorry, You don't have enough credits!"

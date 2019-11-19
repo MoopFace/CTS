@@ -32,3 +32,4 @@ on unload:
 	message "&4&l(!) Successfully unloaded CommandSpy&7.  Goodbye!" to console
 on quit:
 	delete {cs::%uuid of player%}
+#fart

@@ -1,5 +1,0 @@
-command /shop:
-   trigger:
-      open virtual chest with 3 rows named "&6Shop" to player
-      format slot 11 of player with stone sword named "&cPvP Shop" to run /spvp
-      format slot 13 of player with feather named "&3Effect Shop" to run /s effect

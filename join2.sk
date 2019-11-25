@@ -1,7 +1,11 @@
 on damage: 
   if victim is player:
-    add 0.5 to balance of damager
-    send "You've killed %victim% and recieved 0.5 credits!" to damager
+    if player has permission "game.vip"
+      add 1 to balance of damager
+      send "You've killed %victim% and recieved 1 credits!" to damager
+    else:
+      add 0.5 to balance of damager
+      send "You've killed %victim% and recieved 0.5 credits!" to damager
 
 on command "/shop":
    make console execute command "warp shop %player%"

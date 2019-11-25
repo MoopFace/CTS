@@ -1,6 +1,6 @@
 on damage: 
   if victim is player:
-    if player has permission "game.vip"
+    if player has permission "game.vip":
       add 1 to balance of damager
       send "You've killed %victim% and recieved 1 credits!" to damager
     else:

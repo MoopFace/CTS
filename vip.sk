@@ -28,4 +28,5 @@ on click:
    else:
     send "You have purchased &aVIP &fRank for $10,000!"
     make console execute command "manuadd %player% VIP"
+    remove 10000 from player balance
     
